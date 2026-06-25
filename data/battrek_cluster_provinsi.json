@@ -1,0 +1,342 @@
+{
+  "k": 4,
+  "silhouette": 0.472,
+  "rows": [
+    {
+      "provinsi": "DKI Jakarta",
+      "spklu_2024": 520,
+      "spklu_2030": 32589,
+      "rasio_tumbuh": 62.7,
+      "cluster": 0,
+      "cluster_nama": "Episentrum"
+    },
+    {
+      "provinsi": "Jawa Barat",
+      "spklu_2024": 821,
+      "spklu_2030": 6467,
+      "rasio_tumbuh": 7.9,
+      "cluster": 0,
+      "cluster_nama": "Episentrum"
+    },
+    {
+      "provinsi": "Jawa Timur",
+      "spklu_2024": 155,
+      "spklu_2030": 5143,
+      "rasio_tumbuh": 33.2,
+      "cluster": 0,
+      "cluster_nama": "Episentrum"
+    },
+    {
+      "provinsi": "Jawa Tengah",
+      "spklu_2024": 216,
+      "spklu_2030": 2988,
+      "rasio_tumbuh": 13.8,
+      "cluster": 0,
+      "cluster_nama": "Episentrum"
+    },
+    {
+      "provinsi": "Bali",
+      "spklu_2024": 263,
+      "spklu_2030": 2681,
+      "rasio_tumbuh": 10.2,
+      "cluster": 0,
+      "cluster_nama": "Episentrum"
+    },
+    {
+      "provinsi": "Sumatera Utara",
+      "spklu_2024": 136,
+      "spklu_2030": 1672,
+      "rasio_tumbuh": 12.3,
+      "cluster": 0,
+      "cluster_nama": "Episentrum"
+    },
+    {
+      "provinsi": "Banten",
+      "spklu_2024": 188,
+      "spklu_2030": 1519,
+      "rasio_tumbuh": 8.1,
+      "cluster": 0,
+      "cluster_nama": "Episentrum"
+    },
+    {
+      "provinsi": "DI Yogyakarta",
+      "spklu_2024": 33,
+      "spklu_2030": 1929,
+      "rasio_tumbuh": 58.5,
+      "cluster": 1,
+      "cluster_nama": "Pertumbuhan Tinggi"
+    },
+    {
+      "provinsi": "Sulawesi Selatan",
+      "spklu_2024": 79,
+      "spklu_2030": 1255,
+      "rasio_tumbuh": 15.9,
+      "cluster": 1,
+      "cluster_nama": "Pertumbuhan Tinggi"
+    },
+    {
+      "provinsi": "Kalimantan Timur",
+      "spklu_2024": 91,
+      "spklu_2030": 769,
+      "rasio_tumbuh": 8.5,
+      "cluster": 1,
+      "cluster_nama": "Pertumbuhan Tinggi"
+    },
+    {
+      "provinsi": "Sumatera Selatan",
+      "spklu_2024": 100,
+      "spklu_2030": 575,
+      "rasio_tumbuh": 5.8,
+      "cluster": 1,
+      "cluster_nama": "Pertumbuhan Tinggi"
+    },
+    {
+      "provinsi": "Kalimantan Selatan",
+      "spklu_2024": 32,
+      "spklu_2030": 556,
+      "rasio_tumbuh": 17.4,
+      "cluster": 1,
+      "cluster_nama": "Pertumbuhan Tinggi"
+    },
+    {
+      "provinsi": "Kalimantan Barat",
+      "spklu_2024": 42,
+      "spklu_2030": 462,
+      "rasio_tumbuh": 11.0,
+      "cluster": 1,
+      "cluster_nama": "Pertumbuhan Tinggi"
+    },
+    {
+      "provinsi": "Lampung",
+      "spklu_2024": 57,
+      "spklu_2030": 450,
+      "rasio_tumbuh": 7.9,
+      "cluster": 1,
+      "cluster_nama": "Pertumbuhan Tinggi"
+    },
+    {
+      "provinsi": "Sumatera Barat",
+      "spklu_2024": 39,
+      "spklu_2030": 438,
+      "rasio_tumbuh": 11.2,
+      "cluster": 1,
+      "cluster_nama": "Pertumbuhan Tinggi"
+    },
+    {
+      "provinsi": "Riau",
+      "spklu_2024": 36,
+      "spklu_2030": 396,
+      "rasio_tumbuh": 11.0,
+      "cluster": 1,
+      "cluster_nama": "Pertumbuhan Tinggi"
+    },
+    {
+      "provinsi": "Nusa Tenggara Barat",
+      "spklu_2024": 27,
+      "spklu_2030": 352,
+      "rasio_tumbuh": 13.0,
+      "cluster": 1,
+      "cluster_nama": "Pertumbuhan Tinggi"
+    },
+    {
+      "provinsi": "Sulawesi Utara",
+      "spklu_2024": 32,
+      "spklu_2030": 320,
+      "rasio_tumbuh": 10.0,
+      "cluster": 1,
+      "cluster_nama": "Pertumbuhan Tinggi"
+    },
+    {
+      "provinsi": "Kepulauan Riau",
+      "spklu_2024": 7,
+      "spklu_2030": 542,
+      "rasio_tumbuh": 77.4,
+      "cluster": 2,
+      "cluster_nama": "Menengah"
+    },
+    {
+      "provinsi": "Jambi",
+      "spklu_2024": 16,
+      "spklu_2030": 238,
+      "rasio_tumbuh": 14.9,
+      "cluster": 2,
+      "cluster_nama": "Menengah"
+    },
+    {
+      "provinsi": "Kepulauan Bangka Belitung",
+      "spklu_2024": 24,
+      "spklu_2030": 207,
+      "rasio_tumbuh": 8.6,
+      "cluster": 2,
+      "cluster_nama": "Menengah"
+    },
+    {
+      "provinsi": "Aceh",
+      "spklu_2024": 28,
+      "spklu_2030": 188,
+      "rasio_tumbuh": 6.7,
+      "cluster": 2,
+      "cluster_nama": "Menengah"
+    },
+    {
+      "provinsi": "Sulawesi Tenggara",
+      "spklu_2024": 32,
+      "spklu_2030": 157,
+      "rasio_tumbuh": 4.9,
+      "cluster": 2,
+      "cluster_nama": "Menengah"
+    },
+    {
+      "provinsi": "Gorontalo",
+      "spklu_2024": 20,
+      "spklu_2030": 124,
+      "rasio_tumbuh": 6.2,
+      "cluster": 2,
+      "cluster_nama": "Menengah"
+    },
+    {
+      "provinsi": "Bengkulu",
+      "spklu_2024": 16,
+      "spklu_2030": 120,
+      "rasio_tumbuh": 7.5,
+      "cluster": 2,
+      "cluster_nama": "Menengah"
+    },
+    {
+      "provinsi": "Maluku Utara",
+      "spklu_2024": 16,
+      "spklu_2030": 118,
+      "rasio_tumbuh": 7.4,
+      "cluster": 2,
+      "cluster_nama": "Menengah"
+    },
+    {
+      "provinsi": "Maluku",
+      "spklu_2024": 27,
+      "spklu_2030": 114,
+      "rasio_tumbuh": 4.2,
+      "cluster": 2,
+      "cluster_nama": "Menengah"
+    },
+    {
+      "provinsi": "Sulawesi Tengah",
+      "spklu_2024": 32,
+      "spklu_2030": 111,
+      "rasio_tumbuh": 3.5,
+      "cluster": 2,
+      "cluster_nama": "Menengah"
+    },
+    {
+      "provinsi": "Nusa Tenggara Timur",
+      "spklu_2024": 24,
+      "spklu_2030": 109,
+      "rasio_tumbuh": 4.5,
+      "cluster": 2,
+      "cluster_nama": "Menengah"
+    },
+    {
+      "provinsi": "Papua",
+      "spklu_2024": 17,
+      "spklu_2030": 85,
+      "rasio_tumbuh": 5.0,
+      "cluster": 2,
+      "cluster_nama": "Menengah"
+    },
+    {
+      "provinsi": "Kalimantan Tengah",
+      "spklu_2024": 24,
+      "spklu_2030": 75,
+      "rasio_tumbuh": 3.1,
+      "cluster": 2,
+      "cluster_nama": "Menengah"
+    },
+    {
+      "provinsi": "Papua Barat",
+      "spklu_2024": 13,
+      "spklu_2030": 68,
+      "rasio_tumbuh": 5.2,
+      "cluster": 2,
+      "cluster_nama": "Menengah"
+    },
+    {
+      "provinsi": "Kalimantan Utara",
+      "spklu_2024": 3,
+      "spklu_2030": 95,
+      "rasio_tumbuh": 31.7,
+      "cluster": 3,
+      "cluster_nama": "Rendah"
+    },
+    {
+      "provinsi": "Sulawesi Barat",
+      "spklu_2024": 3,
+      "spklu_2030": 21,
+      "rasio_tumbuh": 7.0,
+      "cluster": 3,
+      "cluster_nama": "Rendah"
+    }
+  ],
+  "summary": {
+    "Episentrum": {
+      "n": 7,
+      "rata_spklu_2030": 7580,
+      "rata_rasio_tumbuh": 21.2,
+      "anggota": [
+        "DKI Jakarta",
+        "Jawa Barat",
+        "Jawa Timur",
+        "Jawa Tengah",
+        "Bali",
+        "Sumatera Utara",
+        "Banten"
+      ]
+    },
+    "Pertumbuhan Tinggi": {
+      "n": 11,
+      "rata_spklu_2030": 682,
+      "rata_rasio_tumbuh": 15.5,
+      "anggota": [
+        "DI Yogyakarta",
+        "Sulawesi Selatan",
+        "Kalimantan Timur",
+        "Sumatera Selatan",
+        "Kalimantan Selatan",
+        "Kalimantan Barat",
+        "Lampung",
+        "Sumatera Barat",
+        "Riau",
+        "Nusa Tenggara Barat",
+        "Sulawesi Utara"
+      ]
+    },
+    "Menengah": {
+      "n": 14,
+      "rata_spklu_2030": 161,
+      "rata_rasio_tumbuh": 11.4,
+      "anggota": [
+        "Kepulauan Riau",
+        "Jambi",
+        "Kepulauan Bangka Belitung",
+        "Aceh",
+        "Sulawesi Tenggara",
+        "Gorontalo",
+        "Bengkulu",
+        "Maluku Utara",
+        "Maluku",
+        "Sulawesi Tengah",
+        "Nusa Tenggara Timur",
+        "Papua",
+        "Kalimantan Tengah",
+        "Papua Barat"
+      ]
+    },
+    "Rendah": {
+      "n": 2,
+      "rata_spklu_2030": 58,
+      "rata_rasio_tumbuh": 19.4,
+      "anggota": [
+        "Kalimantan Utara",
+        "Sulawesi Barat"
+      ]
+    }
+  }
+}
