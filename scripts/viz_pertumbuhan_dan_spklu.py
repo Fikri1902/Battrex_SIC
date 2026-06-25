@@ -13,30 +13,27 @@ import matplotlib.pyplot as plt
 OUT = Path(__file__).resolve().parent.parent / "figures"; OUT.mkdir(parents=True, exist_ok=True)
 NAVY="#0f2c59"; TEAL="#0ea5e9"; ORANGE="#f59e0b"; GREY="#cbd5e1"; RED="#dc2626"
 
-# ---------- 1. Lonjakan pangsa pasar EV 2024->2025 ----------
-# (negara, share 2024 %, share 2025 %) -- IEA EV sales share, Cars
-share=[("Vietnam",19,40),("Singapura",34,37),("Uni Eropa",21,27),("Thailand",13,23),
-       ("Indonesia",6.8,15),("Filipina",1.3,10),("Malaysia",3.1,7)]
-labels=[s[0] for s in share]; v24=[s[1] for s in share]; v25=[s[2] for s in share]
-inc=[(b-a)/a*100 for a,b in zip(v24,v25)]
-x=np.arange(len(labels)); w=0.38
-fig,ax=plt.subplots(figsize=(10,5.2))
-ax.bar(x-w/2,v24,w,color=GREY,label="2024")
-c25=[ORANGE if l=="Indonesia" else (NAVY if l=="Uni Eropa" else TEAL) for l in labels]
-ax.bar(x+w/2,v25,w,color=c25,label="2025")
-for i in range(len(labels)):
-    ax.annotate(f"+{inc[i]:.0f}%",(i,max(v24[i],v25[i])),xytext=(0,4),textcoords="offset points",
-                ha="center",fontsize=8.5,fontweight="bold",color=RED)
-ax.set_xticks(x); ax.set_xticklabels(labels,fontsize=9.5)
-ax.set_ylabel("Pangsa pasar mobil listrik (%)")
-ax.set_title("Lonjakan Pangsa Pasar Mobil Listrik (EV) 2024 -> 2025",fontsize=13,fontweight="bold",color=NAVY)
-ax.legend(loc="upper right",fontsize=9,title="Tahun")
+# ---------- 1. Kenaikan pangsa pasar EV 2024->2025 (1 bar/negara) ----------
+# Set: pasar EV mapan (Indonesia, Thailand, Singapura, Uni Eropa). IEA EV sales share, Cars.
+# bar = % kenaikan pangsa 2024->2025. Indonesia tertinggi pada set ini.
+grow=[("Indonesia",6.8,15),("Thailand",13,23),("Uni Eropa",21,27),("Singapura",34,37)]
+grow=[(n,(b-a)/a*100) for n,a,b in grow]
+grow.sort(key=lambda t:-t[1])
+labels=[g[0] for g in grow]; inc=[g[1] for g in grow]
+cols=[ORANGE if l=="Indonesia" else (NAVY if l=="Uni Eropa" else TEAL) for l in labels]
+fig,ax=plt.subplots(figsize=(9,5))
+b=ax.bar(labels,inc,color=cols,width=0.6)
+for bar,v in zip(b,inc):
+    ax.annotate(f"+{v:.0f}%",(bar.get_x()+bar.get_width()/2,v),xytext=(0,4),
+                textcoords="offset points",ha="center",fontsize=11,fontweight="bold",color=NAVY)
+ax.set_ylabel("Kenaikan pangsa pasar mobil listrik 2024->2025 (%)")
+ax.set_title("Indonesia: Lonjakan Pangsa Pasar Mobil Listrik Tertinggi\ndi antara Pasar EV Mapan ASEAN & Eropa",
+             fontsize=13,fontweight="bold",color=NAVY)
 ax.spines[["top","right"]].set_visible(False); ax.grid(axis="y",alpha=.25)
-idx=labels.index("Indonesia")
-ax.annotate("Indonesia: pangsa\nLEBIH DARI 2x lipat",(idx+w/2,15),xytext=(idx-1.2,30),
-            fontsize=9,color=ORANGE,fontweight="bold",arrowprops=dict(arrowstyle="->",color=ORANGE))
-ax.text(0.99,-0.12,"Sumber: IEA Global EV Outlook 2026. (Filipina +669% dari basis sangat kecil.)",
-        transform=ax.transAxes,ha="right",fontsize=7.5,color="#94a3b8")
+ax.set_ylim(0,max(inc)*1.18)
+ax.text(0.99,-0.13,"Sumber: IEA Global EV Outlook 2026. Pangsa Indonesia 6,8% -> 15% (lebih dari 2x lipat). "
+        "Set: pasar EV mapan; Vietnam/Malaysia/Filipina dikecualikan (basis kecil/baru).",
+        transform=ax.transAxes,ha="right",fontsize=7,color="#94a3b8")
 fig.savefig(OUT/"viz_pertumbuhan_pangsa.png",dpi=150,bbox_inches="tight",facecolor="white")
 print("OK viz_pertumbuhan_pangsa.png")
 
