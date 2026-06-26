@@ -37,6 +37,32 @@ ax.text(0.99,-0.13,"Sumber: IEA Global EV Outlook 2026. Pangsa Indonesia 6,8% ->
 fig.savefig(OUT/"viz_pertumbuhan_pangsa.png",dpi=150,bbox_inches="tight",facecolor="white")
 print("OK viz_pertumbuhan_pangsa.png")
 
+# ---------- 1b. Kenaikan pangsa pasar — SELURUH ASEAN + Eropa ----------
+allset=[("Indonesia",6.8,15),("Thailand",13,23),("Vietnam",19,40),("Singapura",34,37),
+        ("Malaysia",3.1,7),("Filipina",1.3,10),("Uni Eropa",21,27)]
+allset=[(n,(b-a)/a*100) for n,a,b in allset]
+allset.sort(key=lambda t:-t[1])
+labels=[g[0] for g in allset]; inc=[g[1] for g in allset]
+cols=[ORANGE if l=="Indonesia" else (NAVY if l=="Uni Eropa" else TEAL) for l in labels]
+fig,ax=plt.subplots(figsize=(10,5.2))
+b=ax.bar(labels,inc,color=cols,width=0.62)
+for bar,v in zip(b,inc):
+    ax.annotate(f"+{v:.0f}%",(bar.get_x()+bar.get_width()/2,v),xytext=(0,4),
+                textcoords="offset points",ha="center",fontsize=9.5,fontweight="bold",color=NAVY)
+ax.set_ylabel("Kenaikan pangsa pasar mobil listrik 2024->2025 (%)")
+ax.set_title("Kenaikan Pangsa Pasar Mobil Listrik 2024->2025 — ASEAN & Uni Eropa",
+             fontsize=13,fontweight="bold",color=NAVY)
+ax.spines[["top","right"]].set_visible(False); ax.grid(axis="y",alpha=.25)
+ax.set_ylim(0,max(inc)*1.15)
+idx=labels.index("Indonesia")
+ax.annotate("Indonesia: pangsa\nlebih dari 2x lipat\n(6,8% -> 15%)",(idx,inc[idx]),
+            xytext=(idx+0.7,max(inc)*0.75),fontsize=9,color=ORANGE,fontweight="bold",
+            arrowprops=dict(arrowstyle="->",color=ORANGE))
+ax.text(0.99,-0.12,"Sumber: IEA Global EV Outlook 2026. Filipina & Malaysia tumbuh dari basis pangsa sangat kecil.",
+        transform=ax.transAxes,ha="right",fontsize=7.5,color="#94a3b8")
+fig.savefig(OUT/"viz_pertumbuhan_pangsa_asean.png",dpi=150,bbox_inches="tight",facecolor="white")
+print("OK viz_pertumbuhan_pangsa_asean.png")
+
 # ---------- 2. EV per SPKLU (public charging point), 2025 ----------
 # (negara, EV per 1 charging point) -- IEA 'Electric LDVs per charging point'
 data=[("Filipina",130),("Singapura",42),("Indonesia",41),("Thailand",31),
