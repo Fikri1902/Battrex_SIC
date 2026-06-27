@@ -17,6 +17,7 @@ Daftar seluruh sumber yang dipakai beserta tautan unduh resmi, agar dapat diveri
 | `Kepmen_ESDM_Rencana_Pengembangan_SPKLU_2025_2030.pdf` | Kepmen ESDM No. 24.K/TL.01/MEM.L/2025 (SPKLU & proyeksi KBLBB) — https://gatrik.esdm.go.id/assets/uploads/download_index/files/82f2f-kepmen-roadmap-spklu-2025-sd-2030.pdf |
 | `ESDM_Buku_Statistik_Ketenagalistrikan_2024.pdf` | ESDM Ditjen Gatrik, Statistik Ketenagalistrikan 2024 — https://gatrik.esdm.go.id/assets/uploads/download_index/files/91fa8-buku-statistik-ketenagalistrikan-2024.pdf |
 | `Regulation_EU_2023_1542_Concerning_Batteries.pdf` | Regulation (EU) 2023/1542 (acuan paspor baterai) — https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32023R1542 |
+| `Randhawa_Chopra_2022_Pestilential_Impacts_of_Battery_Waste_on_Human_Health.pdf` | Randhawa & Chopra (2022), *Materials Today: Proceedings* 52, 434–438 (dampak limbah logam baterai terhadap kesehatan & lingkungan) — DOI: 10.1016/j.matpr.2021.09.094 |
 
 ## Referensi metode tambahan (tanpa berkas)
 | Referensi | Tautan |
