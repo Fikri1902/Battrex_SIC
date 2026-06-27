@@ -1,5 +1,5 @@
 """
-BATTREK — 2 visualisasi tambahan (perbandingan internasional).
+BATTREX — 2 visualisasi tambahan (perbandingan internasional).
 Sumber: IEA Global EV Outlook 2026 (EV Data Explorer) + dataset
 'number of electric LDV per public charging point 2025' (IEA).
 Output: ../figures/viz_pertumbuhan_pangsa.png, ../figures/viz_ev_per_spklu.png

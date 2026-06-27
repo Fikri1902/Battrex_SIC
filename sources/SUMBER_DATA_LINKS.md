@@ -1,4 +1,4 @@
-# Sumber & Tautan Data — BATTREK
+# Sumber & Tautan Data — BATTREX
 
 Daftar seluruh sumber yang dipakai beserta tautan unduh resmi, agar dapat diverifikasi. Berkas yang relevan tersedia di folder `data/` dan `sources/` repo ini.
 

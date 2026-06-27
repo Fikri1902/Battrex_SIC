@@ -1,6 +1,6 @@
-# BATTREK — Data & Reproducibility (SIC 2026)
+# BATTREX — Data & Reproducibility (SIC 2026)
 
-Repositori ini berisi **data, kode, sumber, dan hasil** yang dipakai untuk infografis **BATTREK** (Statistics Infographics Competition / SATRIA DATA 2026, sub-tema *Transisi Energi dan Tantangan Industri Nasional*).
+Repositori ini berisi **data, kode, sumber, dan hasil** yang dipakai untuk infografis **BATTREX** (Statistics Infographics Competition / SATRIA DATA 2026, sub-tema *Transisi Energi dan Tantangan Industri Nasional*).
 
 > **Tujuan repo ini:** memungkinkan **validasi & reproduksi**. Juri/pembaca dapat memeriksa data yang dipakai dan **menghasilkan ulang** seluruh angka & grafik infografis. (Laporan/deskripsi sengaja TIDAK disertakan di sini.)
 
@@ -8,7 +8,7 @@ Repositori ini berisi **data, kode, sumber, dan hasil** yang dipakai untuk infog
 
 ## Struktur folder
 ```
-BATTREK_SIC_GITHUB/
+BATTREX_SIC_GITHUB/
 ├── data/        Data input & output olahan (xlsx, csv, json)
 ├── scripts/     Kode Python reproducible (model + visualisasi)
 ├── figures/     Grafik & peta hasil generate (PNG)

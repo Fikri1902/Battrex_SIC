@@ -1,5 +1,5 @@
 """
-BATTREK — Model Decrement / Kohort-Survival Gelombang Limbah Baterai EV Indonesia
+BATTREX — Model Decrement / Kohort-Survival Gelombang Limbah Baterai EV Indonesia
 =================================================================================
 Pass-1 build. Kalibrasi parameter dari Hadinata dkk. (2025),
 "Electric Car Battery Waste in Indonesia", DOI 10.13170/aijst.14.1.43071,

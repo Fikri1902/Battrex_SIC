@@ -1,5 +1,5 @@
 """
-BATTREK — grafik perbandingan internasional pangsa penjualan mobil listrik (EV share).
+BATTREX — grafik perbandingan internasional pangsa penjualan mobil listrik (EV share).
 Sumber: IEA Global EV Outlook 2026 (EV Data Explorer), parameter 'EV sales share', Cars, EV (BEV+PHEV), %.
 Output: ../figures/viz_banding_asean_eu.png
 """

@@ -1,5 +1,5 @@
 """
-BATTREK — Pilar 3: Clustering Provinsi (paparan & kesiapan ekosistem EV)
+BATTREX — Pilar 3: Clustering Provinsi (paparan & kesiapan ekosistem EV)
 ========================================================================
 Segmentasi 34 provinsi berdasarkan skala & lintasan infrastruktur SPKLU
 (proxy resmi sebaran EV; SPKLU dialokasikan per kepadatan ekosistem EV,
@@ -153,7 +153,7 @@ try:
             ax.add_patch(MplPoly(pts, closed=True, facecolor=col,
                                  edgecolor='white', linewidth=0.3))
     ax.autoscale(); ax.set_aspect('equal'); ax.axis('off')
-    ax.set_title('BATTREK — Klaster Provinsi: Tingkat Paparan Ekosistem EV',
+    ax.set_title('BATTREX — Klaster Provinsi: Tingkat Paparan Ekosistem EV',
                  fontsize=14, fontweight='bold', color='#0f2c59')
     from matplotlib.patches import Patch
     leg = [Patch(facecolor=colors.get(t, '#cbd5e1'), edgecolor='white',

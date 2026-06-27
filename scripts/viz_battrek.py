@@ -1,7 +1,7 @@
 """
-BATTREK — generator visualisasi untuk laporan komprehensif.
+BATTREX — generator visualisasi untuk laporan komprehensif.
 Menghasilkan: data deskriptif (populasi, pangsa pasar, komposisi, penjualan BEV)
-+ 2 flow BATTREK (mikro-fitur & makro-ekosistem).
++ 2 flow BATTREX (mikro-fitur & makro-ekosistem).
 Sumber data: GAIKINDO/Kemenperin & SRUT Kemenhub (Bahan Dirjen ILMATE GIIAS, 31 Jul 2025).
 Output PNG -> ../figures/
 """
@@ -90,9 +90,9 @@ def arrow(ax,x1,y1,x2,y2,color=NAVY,style="-|>"):
     ax.add_patch(FancyArrowPatch((x1,y1),(x2,y2),arrowstyle=style,mutation_scale=18,
                  color=color,lw=2,shrinkA=2,shrinkB=2))
 
-# ---------- 5. Flow MIKRO (fitur BATTREK) ----------
+# ---------- 5. Flow MIKRO (fitur BATTREX) ----------
 fig,ax=plt.subplots(figsize=(14,5)); ax.set_xlim(0,14); ax.set_ylim(0,5); ax.axis("off")
-ax.set_title("Alur Mikro - Cara Kerja Fitur BATTREK (siklus hidup satu baterai)",fontsize=13,fontweight="bold",color=NAVY)
+ax.set_title("Alur Mikro - Cara Kerja Fitur BATTREX (siklus hidup satu baterai)",fontsize=13,fontweight="bold",color=NAVY)
 box(ax,0.2,2.0,2.2,1.1,"1. Battery\nRegistry & ID",NAVY)
 box(ax,2.9,2.0,2.2,1.1,"2. SoH Monitoring\n(ML)",TEAL)
 box(ax,5.6,2.0,2.2,1.1,"3. Decision\nEngine (SoH)",ORANGE)
@@ -108,8 +108,8 @@ save(fig,"battrek_flow_mikro.png")
 
 # ---------- 6. Flow MAKRO (ekosistem) ----------
 fig,ax=plt.subplots(figsize=(13,8.5)); ax.set_xlim(0,13); ax.set_ylim(0,9); ax.axis("off")
-ax.set_title("Alur Makro - Ekosistem & Pemangku Kepentingan BATTREK",fontsize=14,fontweight="bold",color=NAVY)
-box(ax,5.0,4.0,3.0,1.4,"BATTREK\nPlatform Nasional\n(registri + dashboard)",NAVY,fs=11)
+ax.set_title("Alur Makro - Ekosistem & Pemangku Kepentingan BATTREX",fontsize=14,fontweight="bold",color=NAVY)
+box(ax,5.0,4.0,3.0,1.4,"BATTREX\nPlatform Nasional\n(registri + dashboard)",NAVY,fs=11)
 box(ax,0.4,6.8,2.8,1.0,"Produsen / Importir\nbaterai & EV",TEAL,fs=9)
 box(ax,0.4,1.2,2.8,1.0,"Pemilik EV + Bengkel/\nUji berkala",TEAL,fs=9)
 box(ax,5.2,7.6,2.6,1.0,"Regulator\nESDM-KLHK-Kemenperin",ORANGE,fs=9)
