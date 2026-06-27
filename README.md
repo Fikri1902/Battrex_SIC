@@ -33,13 +33,14 @@ pip install numpy pandas openpyxl scikit-learn matplotlib
 ```
 Jalankan dari folder `scripts/`. Output otomatis tertulis ke `../data/` dan `../figures/` (sudah relatif terhadap repo ini). **Urutan disarankan** (script 3 & 4 memakai output script 1 & 2):
 ```
-python model_decrement_battrek.py     # -> data/battrek_decrement_output.json  (proyeksi gelombang akhir-hidup)
-python cluster_provinsi_battrek.py     # -> data/battrek_cluster_provinsi.csv/.json + figures/peta_cluster_provinsi.png
+python model_decrement_battrek.py      # -> data/battrek_decrement_output.json (proyeksi gelombang akhir-hidup)
 python grafik_gelombang.py             # -> figures/grafik_gelombang_eol.png
-python viz_battrek.py                  # -> figures/viz_*.png, battrek_flow_*.png, mockup_dashboard_battrek.png
-python viz_banding.py                  # -> figures/viz_banding_asean_eu.png
+python cluster_provinsi_battrek.py     # -> data/battrek_cluster_provinsi.csv/.json + figures/peta_cluster_provinsi.png
+python viz_fakta_global.py             # -> figures/viz_fakta_global.png (baca EV Data Explorer 2026.xlsx)
+python viz_battrek.py                  # -> figures/viz_populasi_ev.png, viz_market_share.png
+python viz_pertumbuhan_dan_spklu.py    # -> figures/viz_pertumbuhan_pangsa_asean.png
 ```
-> `cluster_provinsi_battrek.py` mengunduh GeoJSON batas provinsi dari internet (butuh koneksi). Telah diuji: kelima script berjalan dari dalam repo ini dan menghasilkan ulang seluruh `data/` & `figures/`.
+> `cluster_provinsi_battrek.py` mengunduh GeoJSON batas provinsi dari internet (butuh koneksi). Setiap figur di `figures/` adalah yang dipakai pada infografis final dan dapat dihasilkan ulang oleh script di atas.
 
 ## Metode (ringkas)
 - **Model decrement / kohort–survival** (Weibull, alpha=3,5; umur baterai 8/10/12 thn) — kalibrasi Hadinata dkk. (2025). Mengubah deret penjualan → proyeksi baterai akhir-hidup. Skenario *committed* (armada yang sudah terjual) & *pertumbuhan* (anchor proyeksi ESDM).
